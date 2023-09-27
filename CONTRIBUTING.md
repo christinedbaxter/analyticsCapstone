@@ -1,24 +1,24 @@
 # Contributing Guidelines
 
-Thank you for considering contributing to ________! We welcome your contributions to make this project better and more valuable for the community. To ensure a smooth collaboration process, please review and follow these guidelines when contributing to the project.
+Thank you for considering contributing to Data Analytics Capstone project! We welcome your contributions to make this project better and more valuable for the community. To ensure a smooth collaboration process, please review and follow these guidelines when contributing to the project.
 
 ## Code of Conduct
 
-Please note that ________ adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you are expected to uphold and follow the code of conduct.
+Please note that the Data Analytics Capstone project adheres to the [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating in this project, you are expected to uphold and follow the code of conduct.
 
 ## Ways to Contribute
 
-There are several ways you can contribute to ________:
+There are several ways you can contribute to the Data Analytics Capstone project:
 
-- Report bugs: If you come across any issues or bugs while using ________, please open a new issue in the GitHub repository. Provide a clear and detailed description of the problem, including steps to reproduce it if possible.
+- Report bugs: If you come across any issues or bugs while using the Data Analytics Capstone project, please open a new issue in the GitHub repository. Provide a clear and detailed description of the problem, including steps to reproduce it if possible.
 
 - Suggest enhancements: If you have ideas or suggestions for new features or improvements, feel free to open an issue. Describe the enhancement you have in mind and provide any relevant context or examples.
 
-- Submit pull requests: If you would like to contribute code to ________, you can submit a pull request. Make sure to follow the coding conventions and guidelines outlined below.
+- Submit pull requests: If you would like to contribute code to Data Analytics Capstone project, you can submit a pull request. Make sure to follow the coding conventions and guidelines outlined below.
 
 ## Development Setup
 
-To set up ________ for local development, follow these steps:
+To set up the Data Analytics Capstone project for local development, follow these steps:
 
 1. Fork the repository.
 2. Clone your forked repository to your local machine.
@@ -27,11 +27,11 @@ To set up ________ for local development, follow these steps:
 5. Test your changes thoroughly to avoid any regressions.
 6. Commit your changes with a descriptive commit message.
 7. Push your changes to your forked repository.
-8. Submit a pull request from your forked repository to the main ________ repository.
+8. Submit a pull request from your forked repository to the main Data Analytics Capstone project repository.
 
 ## Coding Conventions
 
-When contributing code to ________, please adhere to the following conventions:
+When contributing code to the Data Analytics Capstone project, please adhere to the following conventions:
 
 - Write clean, readable, and well-documented code.
 - Follow the existing coding style and formatting.
@@ -49,4 +49,4 @@ To submit a pull request:
 5. Review and address any feedback or suggestions provided during the code review process.
 6. Once the pull request is approved, it will be merged into the main branch.
 
-We appreciate your contributions and efforts to improve ________. Thank you for your support!
+We appreciate your contributions and efforts to improve the Data Analytics Capstone project. Thank you for your support!
