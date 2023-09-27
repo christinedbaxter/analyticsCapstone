@@ -1,10 +1,10 @@
-# ________ Code of Conduct
+# Data Analytics Capstone Project Code of Conduct
 
-As contributors and maintainers of the _________ project, we are committed to fostering an inclusive and respectful community. We value the participation of everyone involved in the project and strive to create an environment that is welcoming and free from harassment, discrimination, and disrespectful behavior. This code of conduct outlines our expectations for all individuals involved in the project, whether they are contributing code, reporting issues, or participating in discussions.
+As contributors and maintainers of the Data Analyst Capstone project, we are committed to fostering an inclusive and respectful community. We value the participation of everyone involved in the project and strive to create an environment that is welcoming and free from harassment, discrimination, and disrespectful behavior. This code of conduct outlines our expectations for all individuals involved in the project, whether they are contributing code, reporting issues, or participating in discussions.
 
 ## Expected Behavior
 
-We expect all individuals involved in the _________ project to:
+We expect all individuals involved in the Data Analyst Capstone project to:
 
 - Be respectful and considerate towards others.
 - Use inclusive language and avoid offensive or discriminatory comments or behavior.
@@ -14,7 +14,7 @@ We expect all individuals involved in the _________ project to:
 
 ## Unacceptable Behavior
 
-The following behaviors are considered unacceptable within the _________ community:
+The following behaviors are considered unacceptable within the Data Analyst Capstone community:
 
 - Harassment, discrimination, or any form of offensive or disrespectful behavior.
 - Intimidation, threats, or personal attacks.
@@ -24,7 +24,7 @@ The following behaviors are considered unacceptable within the _________ communi
 
 ## Reporting Guidelines
 
-If you witness or experience any behavior that violates the code of conduct, we encourage you to report it. Please contact the project maintainers by [email/address] with the details of the incident. All reports will be kept confidential, and the maintainers will investigate the matter promptly. We are committed to taking appropriate and fair actions in response to any reported violations.
+If you witness or experience any behavior that violates the code of conduct, we encourage you to report it. Please contact the project maintainers by [christine.d.baxter@live.com](mailto:christine.d.baxter@live.com) with the details of the incident. All reports will be kept confidential, and the maintainers will investigate the matter promptly. We are committed to taking appropriate and fair actions in response to any reported violations.
 
 ## Enforcement
 
@@ -36,6 +36,6 @@ We are grateful to the [Contributor Covenant](https://www.contributor-covenant.o
 
 ## Scope
 
-This code of conduct applies to all individuals involved in the _________ project, including contributors, maintainers, users, and anyone participating in project-related activities.
+This code of conduct applies to all individuals involved in the Data Analyst Capstone project, including contributors, maintainers, users, and anyone participating in project-related activities.
 
-By participating in the _________ project, you are expected to adhere to this code of conduct. We appreciate your cooperation in making the _________ community inclusive, respectful, and welcoming.
+By participating in the Data Analyst Capstone project, you are expected to adhere to this code of conduct. We appreciate your cooperation in making the Data Analyst Capstone community inclusive, respectful, and welcoming.
