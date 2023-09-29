@@ -1,67 +1,95 @@
 
----
+![img](./img/capstone-analytics-header.jpeg)
 
-# Data Analytics Project
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/christinedbaxter/analyticsCapstone?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/christinedbaxter/analyticsCapstone)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/christinedbaxter/analyticsCapstone)
+![GitHub](https://img.shields.io/github/license/christinedbaxter/analyticsCapstone)
+![contributors](https://img.shields.io/github/contributors/christinedbaxter/analyticsCapstone)
+![codesize](https://img.shields.io/github/languages/code-size/christinedbaxter/analyticsCapstone)
 
-## Table of Contents
+# Current Status
 
-1. [Project Overview](#project-overview)
-2. [Business Issues](#business-issues)
-3. [Data Set Description](#data-set-description)
-4. [Data Preparation](#data-preparation)
-5. [Exploratory Analysis and Modeling](#exploratory-analysis-and-modeling)
-6. [Data Validation](#data-validation)
-7. [Data Visualization and Presentation](#data-visualization-and-presentation)
-8. [Future Work](#future-work)
-9. [GitHub Versioning/Workflow](#github-versioningworkflow)
-10. [Installation and Setup](#installation-and-setup)
-11. [Usage](#usage)
-12. [Issueas and Questions](#issues-and-questions)
-13. [Contributors](#contributors)
-14. [License](#license)
+In Progress
 
----
+# Project Overview
 
-## Project Overview
+In this section you should provide a brief overview of the project, what it is about, and what it aims to achieve. This will help readers quickly understand what the project is all about. Include overarching objectives, key stakeholders, and any other relevant information.
 
-**Objective**:  
+# Business Issues
 
-- Briefly describe the overarching objective of your project here.
+In this section, you should outline the key business objectives and questions that the project aims to answer. You can also note any specific analyses or types of data that stakeholders are interested in.
 
-**Scope**:  
+# Installation and Setup
 
-- Outline the scope of the project including timelines, datasets, and key stakeholders.
+In this section, provide detailed instructions on how to set up the project on a local machine. This includes any necessary dependencies, software requirements, and installation steps. Make sure to include clear and concise instructions so that others can easily replicate your setup.
 
-**Deliverables**:  
+I like to structure it as below -
 
-- List of key outputs or deliverables for this project.
+## Codes and Resources Used
 
----
+In this section I give user the necessary information about the software requirements.
 
-## Business Issues
+- **Editor Used:**  Informing the user of the editor used to produce the project.
+- **Python Version:** Informing the user of the version of python used for this project. If you are using some other language such as R, you can mention that as well.
 
-- Outline the key business objectives and questions that the project aims to answer.
-- Note any specific analyses or types of data that stakeholders are interested in.
+## Python Packages Used
 
----
+In this section, I include all the necessary dependencies needed to reproduce the project, so that the reader can install them before replicating the project. I categorize the long list of packages used as -
 
-## Data Set Description
+- **General Purpose:** General purpose packages like `urllib, os, request`, and many more.
+- **Data Manipulation:** Packages used for handling and importing dataset such as `pandas, numpy` and others.
+- **Data Visualization:** Include packages which were used to plot graphs in the analysis or for understanding the ML modelling such as `seaborn, matplotlib` and others.
+- **Machine Learning:** This includes packages that were used to generate the ML model such as `scikit, tensorflow`, etc.
 
-- Describe the data set: source, key variables, data types, and any initial observations.
-- Include initial data quality assessment: missing values, outliers, duplicates, etc.
+The level of granularity you want to provide for the above list is entirely up to you. You can also add a few more levels, such as those for statistical analysis or data preparation, or you can simply incorporate them into the above list as is.
 
-**Tools for Data Organization**:  
+# Data
 
-- Mention the tools used for data exploration and preparation, such as R, Python, Alteryx, Tableau Prep, or Tableau Desktop.
+The very crucial part of any data science project is dataset. Therefore list all the data sources used in the project, including links to the original data, descriptions of the data, and any pre-processing steps that were taken.
 
----
+I structure this as follows -
 
-## Data Preparation
+## Source Data
 
-- Discuss the data cleaning methods applied: handling missing values, outliers, duplicate records, etc.
-- Mention any transformations or feature engineering done.
+In this section, I list all of the data that was used, along with the source link and a few lines that describe each data. You can also explain each of the data attributes in greater detail if you wish. Describe the data set: source, key variables, data types, and any initial observations.
 
----
+## Data Acquisition
+
+Data collection is not always as simple as downloading from Kaggle or any open source website; it can also be gathered through API calls or online scraping. So you can elaborate on this step in this section so that the reader can obtain the dataset by following your instructions.
+
+## Data Preprocessing
+
+Acquired data is not always squeaky clean, so preprocessing them are an integral part of any data analysis. In this section you can talk about the same. Include initial data quality assessment: missing values, outliers, duplicates, etc.
+
+# Code structure
+
+Explain the code structure and how it is organized, including any significant files and their purposes. This will help others understand how to navigate your project and find specific components.
+
+Here is the basic suggested skeleton for your data science repo (you can structure your repository as needed ):
+
+```bash
+├── data
+│   ├── data1.csv
+│   ├── data2.csv
+│   ├── cleanedData
+│       ├── cleaneddata1.csv
+|       └── cleaneddata2.csv
+├── data_acquisition.py
+├── data_preprocessing.ipynb
+├── data_analysis.ipynb
+├── data_modelling.ipynb
+├── Img
+│   ├── img1.png
+│   └── Headerheader.jpg
+├── LICENSE
+├── README.md
+└── .gitignore
+```
+
+# Results and evaluation
+
+Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
 
 ## Exploratory Analysis and Modeling
 
@@ -93,24 +121,20 @@
 - Tableau
 - Python Libraries (Matplotlib, Seaborn, etc.)
 
----
+# Future work
 
-## Future Work
+Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
 
-- List any additional analyses or improvements that could be done with more time or resources.
-
----
-
-## GitHub Versioning/Workflow
+# GitHub Versioning/Workflow
 
 By adhering to the workflow discussed below, the project maintains a high level of code integrity, streamlines collaboration, and enables seamless tracking of project milestones.
 
-### Branching Strategy
+## Branching Strategy
 
 1. **Initialization**: Created an initial `develop` branch as the base for development.
 2. **Feature Branches**: For each major stage of the project, a dedicated feature branch was created off of the `develop` branch.
 
-### Commit and Merge Workflow
+## Commit and Merge Workflow
 
 1. **Commit Changes**: After the completion of each stage, all changes were committed to the respective feature branch.
 2. **Code Reviews and Merges**: The feature branch was then merged into the `develop` branch post-review.
@@ -119,19 +143,7 @@ By adhering to the workflow discussed below, the project maintains a high level 
 
 ---
 
-## Installation and Setup
-
-- Instructions for setting up the project environment.
-
----
-
-## Usage
-
-- Steps for executing the project, including code snippets where necessary.
-
----
-
-## Issues and Questions
+# Issues and Questions
 
 - List of known issues and questions for further investigation.
 
@@ -149,10 +161,20 @@ We welcome contributions to ________________! To contribute, please follow these
 
 Please make sure to follow our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on the contribution process and code standards.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-[Include any additional disclaimers or terms related to the license, if necessary.]
-
 ---
+
+# Acknowledgments/References
+
+Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
+
+- Header Image by graphicINmotion/#189360493 – stock.adobe.com, modified by me in Adobe Express.
+- [README Template](https://medium.datadriveninvestor.com/how-to-write-a-good-readme-for-your-data-science-project-on-github-ebb023d4a50e-)
+Verma, P. (2023). How to write a good readme for your data science project on GitHub.
+- [Badges](https://shields.io/)
+- Special thanks to OpenAI's ChatGPT for providing valuable insights and guidance on various technical aspects of this project.
+
+# License
+
+Specify the license under which your code is released. Moreover, provide the licenses associated with the dataset you are using. This is important for others to know if they want to use or contribute to your project.
+
+For this github repository, the License used is [MIT License](https://opensource.org/license/mit/).
