@@ -1,0 +1,12 @@
+# Environment variable management
+python-dotenv
+
+# Amazon Web Services (AWS) SDK for Python
+boto3
+
+# For data manipulation and analysis
+pandas
+
+# Tableau Server Client (TSC) Python Library
+tableauserverclient
+
