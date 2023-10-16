@@ -14,10 +14,13 @@ s3 = boto3.client(
     aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
 )
 
-# Add the path to the scripts folder and import the functions
-sys.path.append("../scripts/")
-from get_data import load_csv_file, load_parquet_file
+scripts_path = os.getenv("SCRIPTS_PATH")
 
+# Add the path to the scripts folder and import the functions
+if scripts_path not in sys.path:
+    sys.path.append(scripts_path)
+
+from get_data import load_csv_file, load_parquet_file
 
 def get_raw_dataframes():
     # Define the bucket name and file keys

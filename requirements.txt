@@ -7,6 +7,10 @@ boto3
 # For data manipulation and analysis
 pandas
 
+# For data visualization
+matplotlib
+seaborn
+fastparquet
+
 # Tableau Server Client (TSC) Python Library
 tableauserverclient
-
