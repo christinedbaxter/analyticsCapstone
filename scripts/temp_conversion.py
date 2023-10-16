@@ -6,6 +6,9 @@ def fahrenheit_to_celsius(fahrenheit_value):
     return (fahrenheit_value - 32) * 5 / 9
 
 
+def mM_to_inches(mm_value):
+    return mm_value / 25.4
+
 def kelvin_to_celsius(kelvin_value):
     return kelvin_value - 273.15
 
