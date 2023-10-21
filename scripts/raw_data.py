@@ -28,7 +28,8 @@ def get_raw_dataframes():
     url_cities = "weather/cities.csv"
     url_countries = "weather/countries.csv"
     url_daily_weather = "weather/daily_weather.parquet"
-    url_migraine = "health/IHME-GBD_2019_DATA-361f72c5-1.csv"
+    url_migraine = "health/IHME-GBD_2019_DATA-eb4a1b02-1.csv"
+    # url_migraine = "health/IHME-GBD_2019_DATA-361f72c5-1.csv"
 
     # Load the data into dataframes
     df_cities = load_csv_file(bucket_name, url_cities)
