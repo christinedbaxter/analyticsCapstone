@@ -17,9 +17,10 @@ s3 = boto3.client(
 
 scripts_path = os.getenv("SCRIPTS_PATH")
 
-# Add the path to the scripts folder and import the functions
-if scripts_path not in sys.path:
-    sys.path.append(scripts_path)
+# Add the path to the scripts folder to the sys.path list
+if scripts_path is not None:
+    if scripts_path not in sys.path:
+        sys.path.append(scripts_path)
 
 from get_data import load_csv_file, load_parquet_file
 
