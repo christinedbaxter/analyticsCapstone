@@ -14,24 +14,20 @@ In Progress
 
 # Project Overview
 
-In this section you should provide a brief overview of the project, what it is about, and what it aims to achieve. This will help readers quickly understand what the project is all about. Include overarching objectives, key stakeholders, and any other relevant information.
+This project explores the complex relationship between atmospheric pressure changes and migraine occurrences. The study utilizes extensive weather and health data to investigate whether there is a significant correlation between annual average sea-level pressure and migraine frequency in various geographic locations.
 
 # Business Issues
 
-In this section, you should outline the key business objectives and questions that the project aims to answer. You can also note any specific analyses or types of data that stakeholders are interested in.
+The study addresses the need for understanding migraine triggers, particularly the role of weather conditions. The aim is to aid in developing predictive tools for individuals suffering from migraines and to enhance health strategies for mitigating the impact of migraines.
 
 # Installation and Setup
 
 In this section, provide detailed instructions on how to set up the project on a local machine. This includes any necessary dependencies, software requirements, and installation steps. Make sure to include clear and concise instructions so that others can easily replicate your setup.
 
-I like to structure it as below -
-
 ## Codes and Resources Used
 
-In this section I give user the necessary information about the software requirements.
-
-- **Editor Used:**  Informing the user of the editor used to produce the project.
-- **Python Version:** Informing the user of the version of python used for this project. If you are using some other language such as R, you can mention that as well.
+- **Editor Used:**  Visual Studio Code
+- **Python Version:** 3.8.5
 
 ## Python Packages Used
 
@@ -42,25 +38,56 @@ In this section, I include all the necessary dependencies needed to reproduce th
 - **Data Visualization:** Include packages which were used to plot graphs in the analysis or for understanding the ML modelling such as `seaborn, matplotlib` and others.
 - **Machine Learning:** This includes packages that were used to generate the ML model such as `scikit, tensorflow`, etc.
 
-The level of granularity you want to provide for the above list is entirely up to you. You can also add a few more levels, such as those for statistical analysis or data preparation, or you can simply incorporate them into the above list as is.
-
 # Data
-
-The very crucial part of any data science project is dataset. Therefore list all the data sources used in the project, including links to the original data, descriptions of the data, and any pre-processing steps that were taken.
-
-I structure this as follows -
 
 ## Source Data
 
-In this section, I list all of the data that was used, along with the source link and a few lines that describe each data. You can also explain each of the data attributes in greater detail if you wish. Describe the data set: source, key variables, data types, and any initial observations.
+- **Weather Dataset [Servera 2023]**: Contains over 27 million data points from daily weather patterns.
+- **Migraine Dataset [IHME 2019]**: Comprises 1.4 million data points from the Global Burden of Disease study.
 
 ## Data Acquisition
 
-Data collection is not always as simple as downloading from Kaggle or any open source website; it can also be gathered through API calls or online scraping. So you can elaborate on this step in this section so that the reader can obtain the dataset by following your instructions.
+- Utilized a custom Python script (`raw_data.py`) for streamlined data loading.
+- Loaded several key datasets including city, country, weather, and migraine data.
+- Ensured the integrity and structure of the data by displaying sample rows from each dataset.
+- Initial datasets include:
+  - **City Data**: Information about various cities.
+  - **Country Data**: Details pertaining to different countries.
+  - **Weather Data**: Meteorological information relevant to the study.
+  - **Migraine Data**: Dataset containing migraine incidence and related details.
 
 ## Data Preprocessing
 
-Acquired data is not always squeaky clean, so preprocessing them are an integral part of any data analysis. In this section you can talk about the same. Include initial data quality assessment: missing values, outliers, duplicates, etc.
+- Performed comprehensive data examination and preprocessing to ensure data quality.
+- Implemented rigorous checks for missing values and zero counts to identify and handle data anomalies.
+- Utilized advanced Python libraries like `seaborn`, `folium`, and `missingno` for data visualization and analysis.
+- Applied custom functions for data conversion and manipulation, enhancing the accuracy and relevance of the analysis.
+
+## Data Quality Checks
+
+- Conducted an initial assessment of the datasets to identify missing values and potential data issues.
+- Employed statistical methods to understand data distributions and identify outliers.
+
+## Data Cleaning and Transformation
+
+- Implemented strategies to handle missing values, including imputation techniques.
+- Transformed and normalized key data fields for consistency and better analysis.
+
+# Data Analysis
+
+- Conducted in-depth analysis using the `migraine_weather` DataFrame, a combined dataset derived from migraine and weather data.
+- Utilized advanced statistical techniques to explore and understand the characteristics of the dataset.
+- Performed a comprehensive overview of the data, including type-checking and null value identification.
+
+## Descriptive Analysis
+
+- Generated descriptive statistics to understand the distribution and central tendencies of the data.
+- Checked for null values and anomalies in the dataset to ensure data integrity.
+
+## Analytical Techniques Employed
+
+- Applied various statistical methods to identify patterns and relationships within the data.
+- Employed visualization tools like `matplotlib` and `seaborn` for a clearer understanding of data trends.
 
 # Code structure
 
@@ -72,16 +99,14 @@ Here is the basic suggested skeleton for your data science repo (you can structu
 ├── data
 │   ├── data1.csv
 │   ├── data2.csv
-│   ├── cleanedData
-│       ├── cleaneddata1.csv
-|       └── cleaneddata2.csv
-├── data_acquisition.py
+│   ├── processed
+│       ├── migraine_weather.csv
+|       └── weather_city_country.csv
+├── data_acquisition.ipynb
 ├── data_preprocessing.ipynb
 ├── data_analysis.ipynb
-├── data_modelling.ipynb
 ├── Img
-│   ├── img1.png
-│   └── Headerheader.jpg
+│   ├── Capstone-analytics-header.png
 ├── LICENSE
 ├── README.md
 └── .gitignore
@@ -89,41 +114,33 @@ Here is the basic suggested skeleton for your data science repo (you can structu
 
 # Results and evaluation
 
-Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
-
 ## Exploratory Analysis and Modeling
 
-- Describe the statistical models and machine learning techniques used for analysis.
-- List key findings and insights gained from the modeling.
+- The study initially found no significant correlation between average sea-level pressure and migraine occurrences.
+- Further analysis revealed a significant relationship between pressure variability and migraine frequency.
 
-**Models Used**:  
+### Univariate Analysis
 
-- Linear Regression
-- Decision Trees
-- Random Forest, etc.
+- Conducted univariate analysis to understand the distribution of the data.
+- Utilized various visualization tools like `matplotlib` and `seaborn` to generate graphs and charts.
 
----
+### Statistical Analysis
 
-## Data Validation
-
-- Explain how you validated the data and models.
-- Discuss any iterations or refinements made during this step.
+- Performed statistical analysis to identify patterns and relationships within the data.
+- Conduct correlation analysis between sea-level pressure and migraine occurrences.
+- Perform hypothesis testing to determine if the observed correlation is statistically significant.
+- Explore regression analysis if appropriate, considering other variables that may affect migraines.
 
 ---
 
 ## Data Visualization and Presentation
 
-- Describe the visualization tools and techniques used to present the findings.
-- Explain how the data story was crafted to convey the value of your analysis to clients.
+Various visualization tools were used, including Python libraries like Matplotlib, Folio, and Seaborn.
 
-**Visualization Tools**:  
-
-- Tableau
-- Python Libraries (Matplotlib, Seaborn, etc.)
 
 # Future work
 
-Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
+Future research could focus on the identified significant weather factors, especially pressure changes and precipitation, to develop predictive models for migraine occurrences based on weather patterns.
 
 # GitHub Versioning/Workflow
 
