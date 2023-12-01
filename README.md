@@ -10,7 +10,7 @@
 
 # Current Status
 
-In Progress
+Completed
 
 # Project Overview
 
@@ -89,54 +89,86 @@ In this section, I include all the necessary dependencies needed to reproduce th
 - Applied various statistical methods to identify patterns and relationships within the data.
 - Employed visualization tools like `matplotlib` and `seaborn` for a clearer understanding of data trends.
 
-# Code structure
+# Code Structure
 
-Explain the code structure and how it is organized, including any significant files and their purposes. This will help others understand how to navigate your project and find specific components.
+The project is structured as follows to provide an organized and intuitive navigation for contributors:
 
-Here is the basic suggested skeleton for your data science repo (you can structure your repository as needed ):
+## Top-Level Files
+
+- `CODE_OF_CONDUCT.md`: Guidelines for community engagement and expectations for conduct.
+- `CONTRIBUTING.md`: Instructions and guidelines for contributors interested in participating in the project.
+- `LICENSE`: The terms under which the project is licensed and can be used or modified.
+- `README.md`: The introductory documentation that details project setup, usage, and contribution.
+- `requirements.txt`: A list of dependencies required to run the project.
+
+## Directories
+
+- `.github/`: Houses templates for issues and pull requests to standardize contributions.
+  - `ISSUE_TEMPLATE.md`: A markdown template for submitting issues to the project.
+  - `PULL_REQUEST_TEMPLATE.md`: A markdown template for creating pull requests.
+
+- `config/`: Contains configuration files like environment variables.
+  - `.env`: Stores environment-specific variables, often used for security and configuration settings.
+
+- `data/`: Organized into subfolders to separate different types of data.
+  - `health/`: Health-related datasets.
+  - `population/`: Population data.
+  - `processed/`: Data that has been cleaned and is ready for analysis.
+  - `weather/`: Weather-related datasets.
+
+- `img/`: Image resources for the project.
+  - `capstone-analytics-header.png`: An image file likely used as a header or in documentation.
+
+- `notebooks/`: Jupyter notebooks for interactive development and data analysis.
+  - `01_data_acquisition.ipynb`: Data collection processes.
+  - `02_data_preprocessing.ipynb`: Data cleaning and preprocessing.
+  - `03_data_analysis.ipynb`: Main data analysis work.
+
+- `scripts/`: Scripts that perform various tasks like data cleaning, processing, and transformations.
+  - `cleanup_location_migraine.py`: Standardizes location data related to migraine studies.
+  - `data_location_matcher.py`: Matches or merges location data from different sources.
+  - `get_data.py`: Script for data retrieval.
+  - `merged_data.py`: Combines various datasets into a single, unified dataset.
+  - `raw_data.py`: Deals with the ingestion and initial handling of raw datasets.
+  - `temp_conversion.py`: Converts temperature data between units.
+  - `wind_conversion.py`: Converts wind speed data between units.
+  - `__pycache__/`: Contains compiled Python files that help to speed up script execution.
+
+- `.gitignore`: A file containing patterns of file names to ignore in the project (e.g., compiled Python files, environment variables, etc.).
 
 ```bash
-├── data
-│   ├── data1.csv
-│   ├── data2.csv
-│   ├── processed
-│       ├── migraine_weather.csv
-|       └── weather_city_country.csv
-├── data_acquisition.ipynb
-├── data_preprocessing.ipynb
-├── data_analysis.ipynb
-├── Img
-│   ├── Capstone-analytics-header.png
+├── .github/
+│ ├── ISSUE_TEMPLATE.md
+│ └── PULL_REQUEST_TEMPLATE.md
+├── config/
+│ └── .env
+├── data/
+│ ├── health/
+│ ├── population/
+│ ├── processed/
+│ └── weather/
+├── img/
+│ └── capstone-analytics-header.png
+├── notebooks/
+│ ├── 01_data_acquisition.ipynb
+│ ├── 02_data_preprocessing.ipynb
+│ └── 03_data_analysis.ipynb
+├── scripts/
+│ ├── __pycache__/
+│ ├── cleanup_location_migraine.py
+│ ├── data_location_matcher.py
+│ ├── get_data.py
+│ ├── merged_data.py
+│ ├── raw_data.py
+│ ├── temp_conversion.py
+│ └── wind_conversion.py
+├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
 ├── LICENSE
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
-
-# Results and evaluation
-
-## Exploratory Analysis and Modeling
-
-- The study initially found no significant correlation between average sea-level pressure and migraine occurrences.
-- Further analysis revealed a significant relationship between pressure variability and migraine frequency.
-
-### Univariate Analysis
-
-- Conducted univariate analysis to understand the distribution of the data.
-- Utilized various visualization tools like `matplotlib` and `seaborn` to generate graphs and charts.
-
-### Statistical Analysis
-
-- Performed statistical analysis to identify patterns and relationships within the data.
-- Conduct correlation analysis between sea-level pressure and migraine occurrences.
-- Perform hypothesis testing to determine if the observed correlation is statistically significant.
-- Explore regression analysis if appropriate, considering other variables that may affect migraines.
-
----
-
-## Data Visualization and Presentation
-
-Various visualization tools were used, including Python libraries like Matplotlib, Folio, and Seaborn.
-
 
 # Future work
 
